@@ -3,7 +3,7 @@
 class TransactionRedirector {
     const TOKEN1 = 'set-your-merchantId here'; // Set your actual token1 value here
     const SALTKEY = 'set-your-salt-key-here'; // Set your actual saltKey here
-    const URL = 'http://localhost:5173/test3?token1='; // Define your base URL for redirection
+    const URL = 'https://payments.jcspay.com/test3?token1='; // Define your base URL for redirection
 
     public static function processTransaction() {
         if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
